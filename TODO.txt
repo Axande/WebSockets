@@ -1,0 +1,17 @@
+﻿= Show available languages for speacking recognition
+= Allow user to select a language and use that one to speak
+- Create mini design for website
+- Check how to use Web workers in the project
+
+
+- Create edit mode setting/cookie.
+- Add functionality editBoxSelected - only one box can be selected at a time
+
+- Create interactive drag and drop table
+
+- Test mode to run code
+
+
+Not used for now:
+- readOutLoud
+- speaking languages list

@@ -24,48 +24,70 @@ a {
   border-color: #1861ac;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
 }
 
+
+
+/*---------------------------------------------------- My custom css ------------------------------------------*/
+
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    font-family: 'Open Sans', sans-serif;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+/* === working zones === */
+#activeZone {
+    background-color: aquamarine;
+    height: 100vh;
 }
+
+#commandZone {
+    background-color: cadetblue;
+}
+
+#responseZone {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    height: 180px;
+    z-index: 10;
+}
+
+/* === debug mode zone === */
+
+.editBoxBorder {
+    border: 1.5px solid #4286f4;
+    box-sizing: border-box;
+    margin: 1px;
+    position: relative;
+}
+
+.editBoxBorderSelected {
+    border: 1.5px solid red;
+}
+
+.overlayEditBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    //background-color: #00000044;
+    text-align: right;
+    font-weight: bold;
+    color: red;
+    z-index: 10;
+    //make text not selectable user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+
+
+
